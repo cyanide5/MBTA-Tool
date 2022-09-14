@@ -7,21 +7,21 @@ from flask_restx.apidoc import apidoc
 from app.apis.routes_n_stops_v1 import api as routes_n_stops_v1
 
 
-__version__ = '1.0.0'
+__version__ = "1.0.0"
 
 
 app = Flask(__name__)
 logger = logging.getLogger(__name__)
 
 apidoc.url_prefix = URL_PREFIX
-blueprint = Blueprint('api', __name__, url_prefix=URL_PREFIX)
+blueprint = Blueprint("api", __name__, url_prefix=URL_PREFIX)
 
 
 api = Api(
     blueprint,
     title="MBTA Tool",
     version=__version__,
-    description=f'Its a service!',
+    description=f"Its a service!",
     catch_all_404s=True,
 )
 
