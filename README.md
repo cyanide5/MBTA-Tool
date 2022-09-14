@@ -1,7 +1,7 @@
 ## Set up Instructions
 
 ---
-1. In the terminal change to the project directory <br />```cd ../MBTA-Tool```
+1. In the terminal change to the project directory <br />```cd ../MBTA-Tool_FLASK```
 2. Install the dependencies <br /> ```pip install -r requirements.txt```
 3. Start the Flask Server ```python run.py```
 ---
