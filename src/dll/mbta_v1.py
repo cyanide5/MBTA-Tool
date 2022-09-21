@@ -1,9 +1,12 @@
 from flask_restx import abort
-from app.config import MBTA_URL
 import requests
 import logging
 
+from config import BaseConfig
+
 logger = logging.getLogger(__name__)
+
+MBTA_URL = BaseConfig.MBTA_URL
 
 
 def _get(url, params=""):
